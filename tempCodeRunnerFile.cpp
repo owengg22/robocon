@@ -83,14 +83,14 @@ public:
                 cout << "Bertemu dengan mekanik, siap membasmi rintangan.\n";
                 break;
             case 'E':
-                speed = 1; // kecepatan meningkat
+                speed = 1; 
                 cout << "Bertemu dengan electrical, kecepatan roda naik menjadi 200%.\n";
                 break;
             case 'P':
                 cout << "Hi Programmer.\n";
                 break;
             case 'O':
-                time *= 2; // waktu dikali dua
+                time *= 2; 
                 cout << "Bertemu dengan official, diajak ngonten bareng.\n";
                 break;
         }
