@@ -138,19 +138,18 @@ public:
 };
 
 int main() {
-    // Membaca peta dari file (file peta harus sudah ada di direktori yang sama)
+    
     vector<vector<char>> map_grid = Robot::read_map_from_file("map.txt");
 
-    // Inisialisasi robot di posisi awal (0, 0) dan tujuan di (2, 3) (posisi harus disesuaikan dengan peta)
+    
     pair<int, int> start = {0, 0};
     pair<int, int> end = {2, 3};
 
     Robot robot(map_grid, start, end);
 
-    // Menggerakkan robot ke tujuan menggunakan Inverse Kinematics
     robot.move_towards_end();
 
-    // Cek status akhir robot
+    
     robot.check_status();
     robot.print_time();
 
